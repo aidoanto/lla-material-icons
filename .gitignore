@@ -9,3 +9,26 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Material Icons Generator generated icons and data
+icons/
+material-icons-repo/
+
+# Environment and package manager artifacts
+.uv/
+.uv-cache/
+uv*.lock
+
+# Log files and system files
+*.log
+.DS_Store
+Thumbs.db
+
+# Jupyter and notebook-related
+.ipynb_checkpoints/
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+*.swo

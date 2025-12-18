@@ -32,3 +32,6 @@ Thumbs.db
 *.tmp
 *.swp
 *.swo
+
+material-icons-repo/
+icons/

@@ -196,11 +196,12 @@ class MaterialIconGenerator:
         """Generate a single icon with the specified color configuration."""
         config = self.color_configs[color_config_name]
 
-        # Create base image with circle background
+        # Create base image with solid rectangular background (no circle)
         bg_color = (
             self.hex_to_rgba(config["bg_color"]) if config["bg_color"] else (0, 0, 0, 0)
         )
-        img = self.create_circle_background(bg_color)
+        # Create image with solid color background instead of circle
+        img = Image.new("RGBA", self.size, bg_color)
 
         # Add the icon
         icon_color = config["icon_color"]
